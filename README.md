@@ -1,202 +1,108 @@
-# 📊 Trader Behavior vs Market Sentiment Analysis
+# 📈 Trader Behavior vs Market Sentiment Analysis
 
-## Project Overview
+## 📌 Project Overview
 
-This project analyzes historical cryptocurrency trading data alongside the Fear & Greed Index to understand how market sentiment influences trader behavior and profitability. The analysis combines multiple datasets, performs exploratory data analysis (EDA), and generates business insights through statistical summaries and visualizations.
-
----
-
-## Objective
-
-The primary objectives of this project are:
-
-* Analyze historical trader performance.
-* Explore the relationship between market sentiment and trading behavior.
-* Identify profitability trends under different market conditions.
-* Generate actionable business insights using data analysis.
+This project analyzes the relationship between trader behavior and overall market sentiment by combining historical trading data with sentiment indicators. The objective is to identify whether market sentiment influences trading decisions and profitability using Python-based data analysis techniques.
 
 ---
 
-## Dataset
+## 🎯 Objectives
 
-### 1. Historical Trading Data
-
-**File:** `historical_data.csv`
-
-Contains information about cryptocurrency trades, including:
-
-* Account
-* Coin
-* Execution Price
-* Trade Size
-* Trade Direction
-* Closed Profit & Loss (PnL)
-* Fees
-* Timestamp
-
-### 2. Fear & Greed Index
-
-**File:** `fear_greed_index.csv`
-
-Contains daily market sentiment information:
-
-* Date
-* Fear & Greed Value
-* Sentiment Classification
+* Clean and preprocess multiple datasets.
+* Merge trader behavior data with market sentiment data.
+* Perform exploratory data analysis (EDA).
+* Analyze the relationship between sentiment and trading performance.
+* Generate a final dataset for further analysis and visualization.
 
 ---
 
-## Tools & Technologies
+## 🛠️ Tools & Technologies
 
 * Python
-* Jupyter Notebook
 * Pandas
 * NumPy
-* Matplotlib
-* Seaborn
-* Scikit-learn
+* Jupyter Notebook
+* Git & GitHub
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
-```text
+```
 trader-sentiment-analysis/
 │
-├── data/
-│   ├── historical_data.csv
-│   └── fear_greed_index.csv
-│
-├── notebooks/
-│   └── analysis.ipynb
-│
-├── outputs/
-│   ├── final_merged_dataset.csv
-│   ├── profit_by_sentiment.csv
-│   ├── volume_by_sentiment.csv
-│   ├── win_rate.csv
-│   ├── top_10_coins.csv
-│   ├── sentiment_distribution.png
-│   ├── pnl_by_sentiment.png
-│   ├── top_10_traded_coins.png
-│   └── daily_profit_trend.png
-│
-├── src/
-├── venv/
-└── README.md
+├── data/               # Input datasets
+├── notebooks/          # Jupyter notebooks
+├── outputs/            # Generated output datasets
+├── README.md
+├── requirements.txt
+└── .gitignore
 ```
 
 ---
 
-## Workflow
+## 🔄 Project Workflow
 
-### 1. Data Loading
-
-* Imported historical trading data.
-* Imported Fear & Greed Index data.
-
-### 2. Data Understanding
-
-* Checked dataset shape.
-* Reviewed column names.
-* Verified data types.
-* Generated descriptive statistics.
-
-### 3. Data Cleaning
-
-* Checked missing values.
-* Removed duplicate records.
-* Converted timestamp columns to datetime.
-* Created a common `Date` column for merging.
-
-### 4. Data Integration
-
-* Merged trading data with Fear & Greed Index using the `Date` column.
-* Verified successful matching of records.
-
-### 5. Exploratory Data Analysis (EDA)
-
-Performed analyses including:
-
-* Distribution of Closed PnL
-* Distribution of Market Sentiment
-* Buy vs Sell analysis
-* Long vs Short positions
-* Trading Volume analysis
-* Top 10 traded coins
-* Correlation analysis
-* Daily profit trend
-
-### 6. Business Analysis
-
-Generated:
-
-* Profit by Market Sentiment
-* Trading Volume by Sentiment
-* Win Rate by Sentiment
-* Overall trading statistics
+1. Load trader behavior dataset.
+2. Load market sentiment dataset.
+3. Clean missing and inconsistent values.
+4. Merge datasets using common attributes.
+5. Perform exploratory data analysis.
+6. Generate the final merged dataset.
+7. Save processed datasets for future analysis.
 
 ---
 
-## Output Files
+## 📊 Output Files
 
-The project generates:
-
-* `final_merged_dataset.csv`
-* `profit_by_sentiment.csv`
-* `volume_by_sentiment.csv`
-* `win_rate.csv`
-* `top_10_coins.csv`
-
-Charts:
-
-* Market Sentiment Distribution
-* Closed PnL by Sentiment
-* Top 10 Traded Coins
-* Daily Profit Trend
+* [Merged Trader Sentiment Dataset](outputs/merged_trader_sentiment.csv)
+* [Final Merged Dataset](outputs/final_merged_dataset.csv)
 
 ---
 
-## 📂 Project Outputs
+## 🚀 How to Run
 
-The generated output files are available here:
+1. Clone the repository
 
-- [Merged Trader Sentiment Dataset](outputs/merged_trader_sentiment.csv)
-- [Final Merged Dataset](outputs/final_merged_dataset.csv)
+```bash
+git clone https://github.com/AnushaValishetty2024/trader-sentiment-analysis.git
+```
 
-## Key Findings
+2. Navigate to the project
 
-This project helps answer questions such as:
+```bash
+cd trader-sentiment-analysis
+```
 
-* Does market sentiment influence trader profitability?
-* During which market conditions do traders execute more trades?
-* Which cryptocurrencies are traded most frequently?
-* How does trading volume change across Fear and Greed market phases?
+3. Install dependencies
 
----
+```bash
+pip install -r requirements.txt
+```
 
-## Future Improvements
-
-Potential enhancements include:
-
-* Predict trader profitability using machine learning.
-* Forecast market sentiment trends.
-* Build an interactive dashboard using Power BI or Tableau.
-* Perform coin-specific profitability analysis.
-* Add advanced risk metrics and portfolio analysis.
+4. Open the Jupyter notebook and run all cells.
 
 ---
 
-## Author
+## 📈 Results
 
-**Valishetty Anusha**
-
-Data Analytics & Python Project
+* Successfully cleaned and merged trader behavior and market sentiment datasets.
+* Produced processed datasets for further analysis.
+* Built a reusable data analysis workflow.
 
 ---
 
-## License
+## 📌 Future Improvements
 
-This project is intended for educational purposes and internship portfolio demonstrations.
+* Build an interactive Power BI dashboard.
+* Perform predictive sentiment modeling.
+* Apply machine learning algorithms.
+* Create automated data pipelines.
 
-This README is suitable for an internship submission and clearly documents the project's purpose, workflow, outputs, and deliverables.
+---
+
+## 👩‍💻 Author
+
+**Anusha Valishetty**
+
+GitHub: https://github.com/AnushaValishetty2024
