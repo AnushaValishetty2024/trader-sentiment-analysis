@@ -157,6 +157,13 @@ Charts:
 
 ---
 
+## 📂 Project Outputs
+
+The generated output files are available here:
+
+- [Merged Trader Sentiment Dataset](outputs/merged_trader_sentiment.csv)
+- [Final Merged Dataset](outputs/final_merged_dataset.csv)
+
 ## Key Findings
 
 This project helps answer questions such as:
