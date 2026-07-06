@@ -27,30 +27,22 @@ This project analyzes the relationship between trader behavior and overall marke
 ---
 
 Project Structure
+# 📁 Trader Sentiment Analysis
+
+```text
 trader-sentiment-analysis/
 │
 ├── data/
-│   ├── historical_data.csv
-│   └── fear_greed_index.csv
-│
 ├── notebooks/
-│   └── analysis.ipynb
-│
-├── outputs/
-│   ├── final_merged_dataset.csv
-│   ├── profit_by_sentiment.csv
-│   ├── volume_by_sentiment.csv
-│   ├── win_rate.csv
-│   ├── top_10_coins.csv
-│   ├── sentiment_distribution.png
-│   ├── pnl_by_sentiment.png
-│   ├── top_10_traded_coins.png
-│   └── daily_profit_trend.png
-│
 ├── src/
-├── venv/
-└── README.md
----
+├── outputs/
+├── reports/
+├── dashboard/
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── LICENSE
+```
 
 ## 🔄 Project Workflow
 
